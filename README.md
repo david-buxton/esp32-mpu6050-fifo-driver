@@ -86,12 +86,24 @@ Batch acquisition allows the driver to drain accumulated samples efficiently fol
 
 ## Building and Running
 
-With ESP-IDF installed and configured, run the following commands from the project root:
+With ESP-IDF installed, navigate to the project root and initialise the ESP-IDF environment:
 
-```bash
+```
+source ~/esp/esp-idf/export.sh
+```
+
+Configure the target device (first-time setup only):
+
+```
 idf.py set-target esp32
-idf.py build
-idf.py flash monitor
+```
+
+## Recommended method:
+
+Run the supplied build and test script:
+
+```
+bash build_and_test.sh /dev/ttyUSB0
 ```
 
 ## Hardware Integration Tests
