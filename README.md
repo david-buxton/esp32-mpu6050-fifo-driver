@@ -98,8 +98,6 @@ Configure the target device (first-time setup only):
 idf.py set-target esp32
 ```
 
-## Recommended method:
-
 Run the supplied build and test script:
 
 ```
